@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import useInput from '@hooks/useinput';
+import useInput from '@hooks/useInput';
 import axios from 'axios';
 import { Success, Form, Error, Label, Input, LinkContainer, Button, Header } from './styles';
 import useSWR from 'swr';
@@ -28,7 +28,7 @@ const Login = () => {
   );
 
   if (data) {
-    return <Redirect to="/workspace/channel" />;
+    return <Redirect to="/workspace/sleact/channel/일반" />;
   }
 
   return (
