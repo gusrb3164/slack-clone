@@ -71,7 +71,7 @@ const Workspace: VFC = () => {
         withCredentials: true,
       })
       .then((res) => {
-        mutate(res.data, true);
+        mutate(false, false);
       });
   }, []);
 
